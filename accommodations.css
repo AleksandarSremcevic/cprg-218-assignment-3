@@ -1,0 +1,133 @@
+.accommodations-hero {
+    background: linear-gradient(rgba(19, 196, 219, 0.5), rgba(255, 238, 0, 0.78)), url('assets/Images/hotel-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.accommodations-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.accommodations-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.room-types {
+    padding: 2rem;
+}
+
+.room-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.room-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.room-detail:nth-child(even) {
+    direction: rtl;
+}
+
+.room-detail:nth-child(even) .room-content {
+    direction: ltr;
+}
+
+.room-detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.room-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-content h2 {
+    color: #00796b;
+    margin-bottom: 1rem;
+}
+
+.room-content .book-now-btn {
+    align-self: flex-start;
+}
+
+.book-now-btn {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #005a4f;
+    color: white;
+}
+
+.amenities-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.amenities-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.amenities-list i {
+    color: #00796b;
+}
+
+@media (max-width: 968px) {
+    .room-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .room-detail:nth-child(even) {
+        direction: ltr;
+    }
+
+    .room-detail img {
+        min-height: 300px;
+    }
+
+    .amenities-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .accommodations-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .room-content {
+        padding: 1.5rem;
+    }
+}
