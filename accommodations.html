@@ -12,7 +12,18 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="assets/Asset 1.png" alt="Shangri-La Resort Logo" class="logo">
+            <div class="logo-weather-container">
+                <img src="assets/Asset 1.png" alt="Shangri-La Resort Logo" class="logo">
+                <div class="weather-widget">
+                    <div class="weather-content">
+                        <div class="weather-icon"></div>
+                        <div class="weather-info">
+                            <span class="weather-temp"></span>
+                            <span class="weather-desc"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <button class="burger-menu" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
@@ -39,7 +50,24 @@
         <section class="room-types">
             <div class="room-container">
                 <article class="room-detail">
-                    <img src="assets/Images/ocean-view.jpg" alt="Ocean View Deluxe Room">
+                    <div class="room-slider">
+                        <button class="slider-btn prev" aria-label="Previous image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Next image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-images">
+                            <img src="assets/Images/beach-huts.jpg" alt="Ocean View Deluxe Room - Main View" class="active">
+                            <img src="assets/Images/bedroom-door-entrance-271639.jpg" alt="Ocean View Deluxe Room - Entry">
+                            <img src="assets/Images/hotel-room-1447201_1920.jpg" alt="Ocean View Deluxe Room">
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                    </div>
                     <div class="room-content">
                         <h2>Ocean View Deluxe Room</h2>
                         <p>Indulge in stunning panoramic views of the ocean from your private balcony. These rooms offer a perfect blend of comfort and style.</p>
@@ -57,7 +85,24 @@
                 </article>
 
                 <article class="room-detail">
-                    <img src="assets/Images/beachfront-suite.jpg" alt="Beachfront Suite">
+                    <div class="room-slider">
+                        <button class="slider-btn prev" aria-label="Previous image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Next image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-images">
+                            <img src="assets/Images/hero.jpg" alt="Beachfront Suite - Main View" class="active">
+                            <img src="assets/Images/hotel-1979406_1920.jpg" alt="Beachfront Suite Room">
+                            <img src="assets/Images/white-sand-beach.jpg" alt="Beachfront Suite - Beach">
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                    </div>
                     <div class="room-content">
                         <h2>Beachfront Suite</h2>
                         <p>Step directly onto the sand from your spacious suite. Enjoy the ultimate beachfront experience with added luxury and privacy.</p>
@@ -76,7 +121,24 @@
                 </article>
 
                 <article class="room-detail">
-                    <img src="assets/Images/garden-view.jpg" alt="Garden View Family Room">
+                    <div class="room-slider">
+                        <button class="slider-btn prev" aria-label="Previous image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Next image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-images">
+                            <img src="assets/Images/resort-drone.jpg" alt="Garden View Room - Main View" class="active">
+                            <img src="assets/Images/double.jpg" alt="Garden View Room - Bedroom">
+                            <img src="assets/Images/couple.jpg" alt="Garden View Room - Pool">
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                    </div>
                     <div class="room-content">
                         <h2>Garden View Family Room</h2>
                         <p>Perfect for families, these rooms offer ample space and a tranquil view of our lush gardens.</p>
@@ -94,7 +156,24 @@
                 </article>
 
                 <article class="room-detail">
-                    <img src="assets/Images/premium-suite.jpg" alt="Premium Oceanfront Suite">
+                    <div class="room-slider">
+                        <button class="slider-btn prev" aria-label="Previous image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Next image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-images">
+                            <img src="assets/Images/resort-2495217_1920.jpg" alt="Premium Suite - Main View" class="active">
+                            <img src="assets/Images/king.jpg" alt="Premium Suite - Room">
+                            <img src="assets/Images/palm-tree.jpg" alt="Premium Suite - Outside">
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                    </div>
                     <div class="room-content">
                         <h2>Premium Oceanfront Suite with Plunge Pool</h2>
                         <p>Experience the epitome of luxury. This exclusive suite features a private plunge pool and unparalleled ocean views.</p>
@@ -114,7 +193,24 @@
                 </article>
 
                 <article class="room-detail">
-                    <img src="assets/Images/accessible-room.jpg" alt="Accessible Room">
+                    <div class="room-slider">
+                        <button class="slider-btn prev" aria-label="Previous image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Next image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-images">
+                            <img src="assets/Images/pink-sand.jpg" alt="Accessible Room - Main View" class="active">
+                            <img src="assets/Images/single.jpg" alt="Accessible Room - Bedroom">
+                            <img src="assets/Images/beach-swing.jpg" alt="Accessible Room - Outside">
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                    </div>
                     <div class="room-content">
                         <h2>Accessible Room</h2>
                         <p>Designed for guests with mobility needs, these rooms offer comfort and accessibility features.</p>
@@ -135,8 +231,26 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Shangri-La Beach Resort | Cancun, Mexico</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Shangri-La Beach Resort | Cancun, Mexico</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
     </footer>
+    <script src="js/room-slider.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

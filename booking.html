@@ -12,7 +12,18 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="assets/Asset 1.png" alt="Shangri-La Resort Logo" class="logo">
+            <div class="logo-weather-container">
+                <img src="assets/Asset 1.png" alt="Shangri-La Resort Logo" class="logo">
+                <div class="weather-widget">
+                    <div class="weather-content">
+                        <div class="weather-icon"></div>
+                        <div class="weather-info">
+                            <span class="weather-temp"></span>
+                            <span class="weather-desc"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <button class="burger-menu" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
@@ -103,8 +114,25 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Shangri-La Beach Resort | Cancun, Mexico</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Shangri-La Beach Resort | Cancun, Mexico</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
     </footer>
+    <script src="js/weather.js"></script>
 </body>
 </html>
