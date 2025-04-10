@@ -8,6 +8,5 @@ document.addEventListener('DOMContentLoaded', function() {
         images[currentImageIndex].style.opacity = '1';
     }
 
-    // Change image every 5 seconds
     setInterval(showNextImage, 5000);
 });

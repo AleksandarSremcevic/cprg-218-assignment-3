@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
             showImage(currentIndex);
         }
 
-        // Event Listeners
         prevBtn.addEventListener('click', prevImage);
         nextBtn.addEventListener('click', nextImage);
 
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Touch support
         let touchStartX = 0;
         let touchEndX = 0;
 

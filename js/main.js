@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let testimonialIndex = 0;
     
     loadMoreBtn.addEventListener('click', function() {
-        // Show next two testimonials
+
         for(let i = 0; i < 2; i++) {
             if (hiddenTestimonials[testimonialIndex]) {
                 hiddenTestimonials[testimonialIndex].classList.remove('hidden');
@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        // Hide button if all testimonials are shown
         if (testimonialIndex >= hiddenTestimonials.length) {
             loadMoreBtn.style.display = 'none';
         }

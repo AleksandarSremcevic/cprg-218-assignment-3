@@ -1,4 +1,4 @@
-/* Base */
+/* Style */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -615,7 +615,7 @@ footer a:hover {
         font-size: 0.8rem;
     }
 
-    /* Hero Section Mobile Optimization */
+    /* Hero Section Mobile */
     .hero {
         padding: 4rem 1.5rem;
         min-height: 60vh;
@@ -717,7 +717,7 @@ footer a:hover {
         font-size: 0.75rem;
     }
 
-    /* Hero Section Mobile Optimization */
+    /* Hero Section Mobile */
     .hero {
         padding: 3rem 1rem;
         min-height: 50vh;

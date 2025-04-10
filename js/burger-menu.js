@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.toggle('menu-open');
     });
 
-    // Close menu when clicking outside
     document.addEventListener('click', function(event) {
         const isClickInside = mainNav.contains(event.target) || burgerMenu.contains(event.target);
         
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Close menu when clicking a link
     const navLinks = mainNav.querySelectorAll('a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {

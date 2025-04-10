@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const weatherDesc = document.querySelector('.weather-desc');
     const weatherIcon = document.querySelector('.weather-icon');
 
-    const apiKey = '4eb41268e1a3463988905041250704'; // WeatherAPI key
+    const apiKey = '4eb41268e1a3463988905041250704'; 
     const city = 'Cancun';
 
     async function fetchWeather() {
@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const data = await response.json();
             
-            // Update weather information
             weatherTemp.textContent = `${Math.round(data.current.temp_c)}°C`;
             weatherDesc.textContent = data.current.condition.text;
             weatherIcon.innerHTML = `<img src="${data.current.condition.icon}" alt="${data.current.condition.text}">`;
@@ -30,10 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             weatherIcon.innerHTML = '<i class="fas fa-sun"></i>';
         }
     }
-
-    // Fetch weather immediately
     fetchWeather();
 
-    // Update every 15 minutes
     setInterval(fetchWeather, 15 * 60 * 1000);
 });
